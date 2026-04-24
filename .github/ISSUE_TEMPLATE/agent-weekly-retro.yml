@@ -1,0 +1,48 @@
+name: Agent Weekly Retro
+description: Revisao semanal de desempenho do time de agentes de IA.
+title: "[Agent-Retro] Semana YYYY-MM-DD"
+labels:
+  - ai-agents
+  - retro
+body:
+  - type: textarea
+    id: kpis
+    attributes:
+      label: KPIs da semana
+      description: Informe os indicadores coletados no scorecard.
+      placeholder: |
+        leadTimeHours:
+        reworkRatePercent:
+        regressionBugsCount:
+        ciFirstPassRatePercent:
+        testCoveragePercent:
+        securityHighOrCriticalOpen:
+    validations:
+      required: true
+
+  - type: textarea
+    id: wins
+    attributes:
+      label: Principais ganhos
+      placeholder: O que melhorou nesta semana?
+    validations:
+      required: true
+
+  - type: textarea
+    id: painPoints
+    attributes:
+      label: Principais gargalos
+      placeholder: Onde houve perda de qualidade, velocidade ou seguranca?
+    validations:
+      required: true
+
+  - type: textarea
+    id: adjustments
+    attributes:
+      label: Ajustes para proxima semana
+      description: Ajustes de prompt, ownership, gates ou regras.
+      placeholder: |
+        - [ ] Ajuste 1
+        - [ ] Ajuste 2
+    validations:
+      required: true
